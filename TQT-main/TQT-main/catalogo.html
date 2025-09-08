@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="catalogo.css">
+    
+</head>
+<body>
+
+    <div id="preloader">
+        <img id="pre-carga" src="img/logo_v1.png">
+    </div>
+    
+    <div class="background-blur"></div>
+    <main id="main-content" class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg px-4">
+            <div class="container-fluid">
+                <a class="navbar-brand roboto-slab fs-3 fw-bold" href="index.html"><img src="img/logo_v1.png" style = "width:70px; height:70px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white roboto-slab" href="#home">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white roboto-slab" href="catalogo.html">CATALOGO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white roboto-slab" onclick="showContactForm()">CONTACTO</a>
+                        </li>
+                    </ul>
+                        <a class="nav-link ms-auto-cart" href="#cart">
+                            <i class="fas fa-shopping-cart cart-icon"></i>
+                        </a>
+                </div>
+            </div>
+        </nav>
+    
+    <main class="container my-5">
+        <h1 class="text-center mb-5">Vehículos</h1>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="card-content">
+                        <h2>Deportivo</h2>
+                        <p>Model 3</p>
+                    </div>
+                    <div class="popup">
+                        <img src="img/model_3.png" alt="Auto Deportivo" class="popup-img">
+                        <div class="popup-info">
+                            <h3>Model 3</h3>
+                            <p>Velocidad y adrenalina pura en cada curva.</p>
+                            <p class="car-price">$1.000.000</p>
+                            <a href="#" class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart cart-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="card-content">
+                        <h2>Sedán</h2>
+                        <p>Model S</p>
+                    </div>
+                    <div class="popup">
+                        <img src="img/model_s.png" alt="Sedán de Lujo" class="popup-img">
+                        <div class="popup-info">
+                            <h3>Model S</h3>
+                            <p>Confort y tecnología de vanguardia.</p>
+                            <p class="car-price">$2.000.000</p>
+                            <a href="#" class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart cart-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="card-content">
+                        <h2>Deportivo</h2>
+                        <p>Model x</p>
+                    </div>
+                    <div class="popup">
+                        <img src="img/model_x.webp" alt="SUV Familiar" class="popup-img">
+                        <div class="popup-info">
+                            <h3>Model X</h3>
+                            <p>Aventura sin límites para toda la familia.</p>
+                            <p class="car-price">$3.000.000</p>
+                            <a href="#" class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart cart-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+    <footer class="border-top border-light py-4">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h5 class="text-white roboto-slab">PDM</h5>
+                  <p class="text-white-50">Tu concesionario de confianza desde 1995</p>
+              </div>
+              <div class="col-md-6 text-md-end">
+                  <p class="text-white-50 mb-0">&copy; 2025 PDM. Todos los derechos reservados.</p>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js" ></script>
+
+</html>
