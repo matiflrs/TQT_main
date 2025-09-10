@@ -1,0 +1,286 @@
+@media (max-width: 768px) {
+    .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .stat-item h3 {
+        font-size: 1.8rem;
+    }
+    
+
+    .filters-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .filter-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .filter-select {
+        min-width: 120px;
+    }
+    
+
+    .vehicle-image {
+        height: 200px;
+    }
+    
+    .vehicle-specs {
+        grid-template-columns: 1fr;
+    }
+    
+
+    .contact-options {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+
+    .tesla-carousel {
+        max-width: 100%;
+        margin: 0 1rem;
+    }
+    
+    .carousel-container {
+        height: 400px;
+    }
+    
+    .car-slide {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .car-image {
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .car-image img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .car-info {
+        flex: none;
+        padding-left: 0;
+    }
+    
+    .car-info h3 {
+        font-size: 2rem;
+    }
+    
+
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-catalog {
+        min-height: 50vh;
+        text-align: center;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+
+    .vehicle-info {
+        padding: 1rem;
+    }
+    
+    .vehicle-title {
+        font-size: 1.25rem;
+    }
+    
+    .vehicle-price {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+
+    .tesla-carousel {
+        margin: 0 0.5rem;
+    }
+    
+    .carousel-container {
+        height: 350px;
+    }
+    
+    .car-slide {
+        padding: 15px;
+    }
+    
+    .car-image img {
+        width: 250px;
+        height: 150px;
+    }
+    
+    .car-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .car-info p {
+        font-size: 1rem;
+    }
+    
+    .car-specs span {
+        font-size: 0.8rem;
+    }
+    
+    .car-price {
+        font-size: 1.5rem;
+    }
+    
+
+    .hero-section {
+        min-height: 60vh;
+        padding: 2rem 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.1rem;
+    }
+    
+
+    .contact-section {
+        padding: 60px 0;
+    }
+    
+    .contact-item {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-icon {
+        font-size: 2.5rem;
+    }
+    
+
+    .modal-dialog {
+        margin: 1rem;
+    }
+    
+    .modal-content {
+        max-width: 95%;
+    }
+    
+    .modal-body {
+        padding: 1rem;
+    }
+    
+
+    .navbar-brand img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .navbar-toggler {
+        border: none;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .carousel-container {
+        height: 300px;
+    }
+    
+    .car-image img {
+        width: 200px;
+        height: 120px;
+    }
+    
+    .car-info h3 {
+        font-size: 1.25rem;
+    }
+    
+    .car-price {
+        font-size: 1.25rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .vehicle-title {
+        font-size: 1.1rem;
+    }
+    
+    .vehicle-price {
+        font-size: 1.25rem;
+    }
+    
+    .stat-item h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 80vh;
+    }
+    
+    .carousel-container {
+        height: 300px;
+    }
+    
+    .car-slide {
+        flex-direction: row;
+        padding: 10px 20px;
+    }
+    
+    .car-image {
+        padding-right: 20px;
+        margin-bottom: 0;
+    }
+    
+    .car-info {
+        padding-left: 20px;
+        text-align: left;
+    }
+}
+
+
+@media print {
+    .navbar,
+    .carousel-nav,
+    .carousel-indicators,
+    .contact-section,
+    footer {
+        display: none;
+    }
+    
+    .hero-section,
+    .vehicles-section {
+        page-break-inside: avoid;
+    }
+    
+    .vehicle-item {
+        break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+}
