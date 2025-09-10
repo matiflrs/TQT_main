@@ -135,8 +135,10 @@ function submitContactForm() {
     }    
 
     // Fuente regex:  https://regex101.com/library/SOgUIV
-    const emailRegex = /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;;
-    if (!email.value.trim() || !emailRegex.test(email.value)) {
+    const duoc = 'duocuc.cl';
+    const duoc2 = 'profesor.duoc.cl';
+    const gmail = 'gmail.com';
+    if (!email.value.includes(duoc) && !email.value.includes(duoc2) && !email.value.includes(gmail)) {
         email.classList.add('is-invalid');
         isValid = false;
     } else {
